@@ -5,6 +5,12 @@ test('1 - acessing the page', async ({ page }) => {
     await expect(page).toHaveTitle('Swag Labs');
 });
 
+/*adicionar mais cenários:
+- login com campos vazios
+- login somente com username correto preenchido
+- login comente com password correto preenchido
+*/
+
 test('2 - submiting wrong username', async ({ page }) => {
     await page.goto('https://www.saucedemo.com/');
     // await page.waitForTimeout(5000);
